@@ -17,7 +17,7 @@ module PVOutput
       self.class.headers 'X-Pvoutput-Apikey' => @api_key, 'X-Pvoutput-SystemId' => @system_id
     end
 
-    # Helper method to post batch request to pvout that retries at the moment we get
+    # Helper method to post batch request to pvoutput that retries at the moment we get
     # a 400 error back with body containing 'Load in progress'
     def post_request(path, options = {}, &block)
       data_send = false
